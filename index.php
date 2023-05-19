@@ -57,19 +57,23 @@ $hotels = [
 
 <body>
 
-    <?php foreach ($hotels as $hotel) {
+    <div class="container">
 
-        echo "Nome: " . $hotel['name'] . "<br>";
+        <?php foreach ($hotels as $hotel) {
 
-        echo "Descrizione: " . $hotel['description'] . "<br>";
+            echo "Nome: " . $hotel['name'] . "<br>";
 
-        echo "Parcheggio disponibile: " . ($hotel['parking'] ? 'Sì' : 'No') . "<br>";
+            echo "Descrizione: " . $hotel['description'] . "<br>";
 
-        echo "Voto: " . $hotel['vote'] . "<br>";
+            echo "Parcheggio disponibile: " . ($hotel['parking'] ? 'Sì' : 'No') . "<br>";
 
-        echo "Distanza dal centro: " . $hotel['distance_to_center'] . "<br>";
+            echo "Voto: " . $hotel['vote'] . "<br>";
 
-    } ?>
+            echo "Distanza dal centro: " . $hotel['distance_to_center'] . "<br>";
+
+        } ?>
+
+    </div>
 
 </body>
 
