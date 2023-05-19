@@ -55,7 +55,11 @@ $hotels = [
 <body>
 
     <?php foreach ($hotels as $hotel) {
+
         echo "Nome: " . $hotel['name'] . "<br>";
+
+        echo "Descrizione: " . $hotel['description'] . "<br>";
+
     } ?>
 
 </body>
