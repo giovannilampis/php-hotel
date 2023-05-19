@@ -60,6 +60,12 @@ $hotels = [
 
         echo "Descrizione: " . $hotel['description'] . "<br>";
 
+        echo "Parcheggio disponibile: " . ($hotel['parking'] ? 'Sì' : 'No') . "<br>";
+
+        echo "Voto: " . $hotel['vote'] . "<br>";
+
+        echo "Distanza dal centro: " . $hotel['distance_to_center'] . "<br>";
+
     } ?>
 
 </body>
