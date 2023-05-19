@@ -73,7 +73,7 @@ $hotels = [
 
         } ?>
 
-        <table class="table">
+        <table class="table my-5">
             <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -87,28 +87,24 @@ $hotels = [
             <tbody>
                 <?php foreach ($hotels as $hotel) { ?>
                     <tr>
-                        <th scope="row">1</th>
+                        <th scope="row">#</th>
                         <td>
                             <?php echo $hotel['name']; ?>
                         </td>
+                        <td>
+                            <?php echo $hotel['description']; ?>
+                        </td>
+                        <td>
+                            <?php echo $hotel['parking']; ?>
+                        </td>
+                        <td>
+                            <?php echo $hotel['vote']; ?>
+                        </td>
+                        <td>
+                            <?php echo $hotel['distance_to_center']; ?>
+                        </td>
                     </tr>
                 <?php } ?>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                </tr>
             </tbody>
         </table>
 
