@@ -85,13 +85,14 @@ $hotels = [
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($hotels as $hotel) ?>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>
-                        <?php echo $hotel['name']; ?>
-                    </td>
-                </tr>
+                <?php foreach ($hotels as $hotel) { ?>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>
+                            <?php echo $hotel['name']; ?>
+                        </td>
+                    </tr>
+                <?php } ?>
                 <tr>
                     <th scope="row">2</th>
                     <td>Jacob</td>
